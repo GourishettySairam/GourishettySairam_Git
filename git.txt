@@ -1,0 +1,184 @@
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1
+$ pwd
+/f/file/EPAM_TASK_1
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1
+$ git init
+Initialized empty Git repository in F:/file/EPAM_TASK_1/.git/
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git --global user.name "Gourishetty Sairam"
+unknown option: --global
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git config --global user.name "Gourishetty Sairam"
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git config --global user.email sairamgourishetty99@gmail.com
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+core.editor="C:\\Program Files\\Notepad++\\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+credential.helper=manager
+user.name=Gourishetty Sairam
+user.email=sairamgourishetty99@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ touch Hello.java
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git add .
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Hello.class
+        new file:   Hello.java
+
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git commit -m "committed successfully"
+[master (root-commit) 801672a] committed successfully
+ 2 files changed, 9 insertions(+)
+ create mode 100644 Hello.class
+ create mode 100644 Hello.java
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git status -s
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git log
+commit 801672a9f79533f41c3ea4c5628b198924a48fe5 (HEAD -> master)
+Author: Gourishetty Sairam <sairamgourishetty99@gmail.com>
+Date:   Sat Jan 25 18:13:18 2020 +0530
+
+    committed successfully
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git push master
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git remote add origin https://github.com/GourishettySairam/tasks.git
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 660 bytes | 165.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/GourishettySairam/tasks.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git log
+commit 801672a9f79533f41c3ea4c5628b198924a48fe5 (HEAD -> master, origin/master)
+Author: Gourishetty Sairam <sairamgourishetty99@gmail.com>
+Date:   Sat Jan 25 18:13:18 2020 +0530
+
+    committed successfully
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+DIVYA@Lenovo-PCD MINGW64 /f/file/EPAM_TASK_1 (master)
+$
